@@ -158,8 +158,8 @@ namespace DnD
             CreateLabel(FindModifier(PlayerList[count].Intel), 160, fourthRow, 14.25F, count, false, "IntMod");
             CreateLabel(FindModifier(PlayerList[count].Wis), 200, fourthRow, 14.25F, count, false, "WisMod");
             CreateLabel(FindModifier(PlayerList[count].Cha), 240, fourthRow, 14.25F, count, false, "ChaMod");
-            CreateButton("Equpied Weapons", 420, fourthRow, 12.00F, count);
-            CreateButton("Known Spells", 570, fourthRow, 12.00F, count);
+            //CreateButton("Equpied Weapons", 420, fourthRow, 12.00F, count);
+            CreateButton("Known Spells", 420, fourthRow, 12.00F, count);
         }
 
         public void CreateLabel(string text, int xLocation, int yLocation, float fontSize, int count, bool clickable, string name)
@@ -199,7 +199,7 @@ namespace DnD
             btn.Font = new System.Drawing.Font("Modern No. 20", fontSize, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             btn.Text = text;
             btn.Location = new System.Drawing.Point(xLocation, yLocation + (125 * count));
-            btn.Width = 150;
+            btn.Width = 320;
             btn.Height = 30;
             btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             btn.ForeColor = Color.White;
@@ -210,6 +210,7 @@ namespace DnD
             else if (btn.Name.Contains("Delete Player"))
             {
                 btn.Visible = false;
+                btn.Width = 150;
                 btn.MouseClick += new MouseEventHandler(btn_DeletePlayerMouseClick);
             }
             this.Controls.Add(btn);
@@ -378,8 +379,17 @@ namespace DnD
         {
             for(int i = 0; i < InitiativeList.Count; i++)
             {
-                if(InitiativeList[i] != null && InitiativeList[i] != "")
-                    TextBoxList[i].Text = InitiativeList[i];
+                if (InitiativeList[i] != null && InitiativeList[i] != "")
+                {
+                    try
+                    {
+                        TextBoxList[i].Text = InitiativeList[i];
+                    }
+                    catch(Exception e)
+                    {
+
+                    }
+                }
             }
         }
 
