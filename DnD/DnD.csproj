@@ -105,6 +105,10 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="CharacterStats.csv" />
+    <None Include="Executable %28Copy all this to wherever you want and ENJOY%29\CharacterStats.csv" />
+    <None Include="Executable %28Copy all this to wherever you want and ENJOY%29\DnD.exe.config" />
+    <None Include="Executable %28Copy all this to wherever you want and ENJOY%29\DnD.vshost.exe.config" />
+    <None Include="Executable %28Copy all this to wherever you want and ENJOY%29\DnD.vshost.exe.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,6 +125,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DnD.png" />
+    <Content Include="Executable %28Copy all this to wherever you want and ENJOY%29\DnD.exe" />
+    <Content Include="Executable %28Copy all this to wherever you want and ENJOY%29\DnD.pdb" />
+    <Content Include="Executable %28Copy all this to wherever you want and ENJOY%29\DnD.png" />
+    <Content Include="Executable %28Copy all this to wherever you want and ENJOY%29\DnD.vshost.exe" />
+    <Content Include="Executable %28Copy all this to wherever you want and ENJOY%29\Newtonsoft.Json.dll" />
+    <Content Include="Executable %28Copy all this to wherever you want and ENJOY%29\Newtonsoft.Json.xml" />
+    <Content Include="Executable %28Copy all this to wherever you want and ENJOY%29\SpellsTxt.txt" />
     <Content Include="SpellsTxt.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
