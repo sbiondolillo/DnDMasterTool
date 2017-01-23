@@ -242,9 +242,9 @@ namespace DnD
             box.Items.Add("Druid");
             box.Items.Add("Fighter");
             box.Items.Add("Monk");
-            box.Items.Add("Palidin");
+            box.Items.Add("Paladin");
             box.Items.Add("Ranger");
-            box.Items.Add("Rouge");
+            box.Items.Add("Rogue");
             box.Items.Add("Sorcerer");
             box.Items.Add("Warlock");
             box.Items.Add("Wizard");
@@ -662,17 +662,17 @@ namespace DnD
                 profBonus = 6;
 
 
-            if (@class == "Fighter" || @class == "Rouge" || @class == "Wizard")
+            if (@class == "Fighter" || @class == "Rogue" || @class == "Wizard")
             {
                 LabelList[spellsaveindex].Text = (8 + profBonus + intMod).ToString();
                 LabelList[spellattackindex].Text = (profBonus + intMod).ToString();
             }
-            else if (@class == "Cleric" || @class == "Druid" || @class == "Ranger")
+            else if (@class == "Cleric" || @class == "Druid" || @class == "Ranger" || @class == "Monk")
             {
                 LabelList[spellsaveindex].Text = (8 + profBonus + wisMod).ToString();
                 LabelList[spellattackindex].Text = (profBonus + wisMod).ToString();
             }
-            else if (@class == "Bard" || @class == "Palidin" || @class == "Sorcerer" || @class == "Warlock")
+            else if (@class == "Bard" || @class == "Paladin" || @class == "Sorcerer" || @class == "Warlock")
             {
                 LabelList[spellsaveindex].Text = (8 + profBonus + charMod).ToString();
                 LabelList[spellattackindex].Text = (profBonus + charMod).ToString();
