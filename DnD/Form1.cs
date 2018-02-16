@@ -45,7 +45,7 @@ namespace DnD
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != null || textBox1.Text != "")
+            if (!String.IsNullOrWhiteSpace(textBox1.Text))
             {
                 DnDMasterTool frm = new DnDMasterTool(textBox1.Text);
                 this.Visible = false;
