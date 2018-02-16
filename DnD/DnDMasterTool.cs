@@ -600,7 +600,7 @@ namespace DnD
 
         private void btnAddPlayer_Click(object sender, EventArgs e)
         {
-            if (TxtAddPlayer.Text != null && TxtAddPlayer.Text != "")
+            if (!String.IsNullOrWhiteSpace(TxtAddPlayer.Text))
             {
                 var btn = (Button)sender;
                 TxtAddPlayer.Location = new System.Drawing.Point(TxtAddPlayer.Location.X, TxtAddPlayer.Location.Y + 125);
